@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="./src/assets/js/kvue.js"></script>
+</head>
+<body>
+    <p>1111</p>
+    <script>
+       
+            const vm = new KVue({
+                data: {
+                    name: 'Hadwin',
+                    other: {
+                        like: 'play'
+                    }
+                }
+            }) 
+            console.log(vm.$data)
+            vm.$data.name="zhangsan";
+            vm.$data.other.like="aaa";
+            console.log(21212121, vm.other, vm.other.like)
+       
+    </script>
+</body>
+</html>

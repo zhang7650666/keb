@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>1111</p>
+    <script>
+        const obj = {};
+        Object.defineProperty(obj, 'name', {
+            get() {
+                console.log('获取name属性')
+            },
+            set(args) {
+                console.log('修改name属性')
+            }
+        })
+        obj.name = 'Hadwin';
+        console.log(obj.name)
+    </script>
+</body>
+</html>
