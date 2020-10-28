@@ -1,13 +1,10 @@
 <template>
   <div id="app">
-    <breadcrumb></breadcrumb>
-    <div id="nav">
+    <!-- <breadcrumb></breadcrumb> -->
+    <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/shop">home</router-link>
-    </div>
-
-    
+    </div> -->
     <router-view/>
   </div>
 </template>
@@ -39,5 +36,13 @@ export default {
       color: #42b983;
     }
   }
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+li{
+    list-style: none;
 }
 </style>

@@ -31,8 +31,7 @@ export default {
         toggle() {
             if(this.isFolder) {
                 this.open = !this.open;
-            }
-            
+            }  
         }
     }
 }

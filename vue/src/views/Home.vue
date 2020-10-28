@@ -18,9 +18,13 @@
       </template>
     </HelloWorld> -->
 
-    <FromTest></FromTest>
+    <!-- <FromTest></FromTest>
 
-    <Tree></Tree>
+    <Tree></Tree> -->
+    <!-- <Icon iconClass="xx"></Icon> -->
+    <!-- <svg>
+      <use xlink:href="#icon-del"></use>
+    </svg> -->
   </div>
 
 </template>
@@ -31,7 +35,7 @@
 // import Test from '@/components/test.vue'
 import FromTest from '@/components/form'
 import Tree from '@/components/tree'
-
+import Icon from '@/components/base/icon'
 export default {
     name: 'Home',
     // provide: {
@@ -41,7 +45,8 @@ export default {
         // HelloWorld,
         // Test,
         FromTest,
-        Tree
+        Tree,
+        Icon
        
     },
     method: {

@@ -21,7 +21,7 @@ class KStore {
         this.$options = options;
         this.mutations = options.mutations || {};
         this.actions = options.actions || {};
-        options.getters && this.handleGetters(options.getters)
+        options.getters && this.handlerGetters(options.getters)
     }
 
     commit(type, args) {
@@ -33,7 +33,7 @@ class KStore {
         return dispFn({commit: this.commit, state: this.state}, args)
     }
 
-    handlerGatters(gatters) {
+    handlerGetters(gatters) {
         this.gatters = {};
         Object.keys(gatters).forEach(key => {
             Object.defineProperty(this.gatters, key, {

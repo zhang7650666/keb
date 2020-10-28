@@ -1,8 +1,8 @@
 const list = {
     path: '/',
-    name: 'shop',
-    component: () => import('@/views/list/shop'),
-    redirect: '/list',
+    name: 'home',
+    component: () => import('@/views/Home'),
+    // redirect: '/list',
     meta: {
         title: '商品'
     },
